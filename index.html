@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="weather-app-container">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            class="search-form-input"
+            type="search"
+            placeholder="Enter a city.."
+            required
+            id="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+
+            <span id="date"></span>
+            ,
+            <span id="cloud"></span>
+            <br />
+            <span>Humidity:</span>
+            <strong id="humidity">92%</strong>
+            , Wind:
+            <strong id="wind">1.54km/h</strong>
+          </div>
+
+          <div class="weather-app-temperature-container">
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
+        <div class="weather-forecast" id="forecast"></div>
+      </main>
+      <footer>
+        <div>
+          This project coded by
+          <a href="https://github.com/SenayYakut" target="_blank">
+            Senay Yakut
+          </a>
+          , is
+
+          <a
+            href="https://github.com/SenayYakut/weather-app-and-API"
+            target="_blank"
+          >
+            open-sourced on GitHub
+          </a>
+          and
+          <a href="https://weather-app-by-senay.netlify.app/" target="_blank">
+            hosted on Netlify
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
